@@ -1,0 +1,4 @@
+Book Name: Scott Pilgrim's Precious Little Life (Scott Pilgrim #1) 
+Book Price: £52.29 
+Book Rating: 5 stars
+Book Link: https://books.toscrape.com/catalogue/scott-pilgrims-precious-little-life-scott-pilgrim-1_987/index.html 

@@ -1,0 +1,4 @@
+Book Name: It's Only the Himalayas 
+Book Price: £45.17 
+Book Rating: 2 stars
+Book Link: https://books.toscrape.com/catalogue/its-only-the-himalayas_981/index.html 
