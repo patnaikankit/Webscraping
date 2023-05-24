@@ -1,4 +1,0 @@
-Book Name: Set Me Free 
-Book Price: £17.46 
-Book Rating: 5 stars
-Book Link: https://books.toscrape.com/catalogue/set-me-free_988/index.html 

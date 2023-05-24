@@ -1,4 +1,0 @@
-Book Name: Sharp Objects 
-Book Price: £47.82 
-Book Rating: 4 stars
-Book Link: https://books.toscrape.com/catalogue/sharp-objects_997/index.html 

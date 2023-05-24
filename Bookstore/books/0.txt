@@ -1,4 +1,0 @@
-Book Name: A Light in the Attic 
-Book Price: £51.77 
-Book Rating: 3 stars
-Book Link: https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html 

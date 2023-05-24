@@ -1,4 +1,0 @@
-Book Name: Tipping the Velvet 
-Book Price: £53.74 
-Book Rating: 1 stars
-Book Link: https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html 

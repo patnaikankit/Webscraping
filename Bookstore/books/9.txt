@@ -1,4 +1,0 @@
-Book Name: The Black Maria 
-Book Price: £52.15 
-Book Rating: 1 stars
-Book Link: https://books.toscrape.com/catalogue/the-black-maria_991/index.html 
