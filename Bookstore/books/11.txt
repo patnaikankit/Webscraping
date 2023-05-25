@@ -1,0 +1,4 @@
+Book Name: Shakespeare's Sonnets 
+Book Price: £20.66 
+Book Rating: 4 stars
+Book Link: https://books.toscrape.com/catalogue/shakespeares-sonnets_989/index.html 

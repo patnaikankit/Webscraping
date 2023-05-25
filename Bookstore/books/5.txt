@@ -1,0 +1,4 @@
+Book Name: The Requiem Red 
+Book Price: £22.65 
+Book Rating: 1 stars
+Book Link: https://books.toscrape.com/catalogue/the-requiem-red_995/index.html 

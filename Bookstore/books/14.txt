@@ -1,0 +1,4 @@
+Book Name: Rip it Up and Start Again 
+Book Price: £35.02 
+Book Rating: 5 stars
+Book Link: https://books.toscrape.com/catalogue/rip-it-up-and-start-again_986/index.html 
