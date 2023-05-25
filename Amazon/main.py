@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import time
 
+
 def get_title(soup):
     try:
         title = soup.find("span", attrs={"id":'productTitle'})
@@ -15,8 +16,8 @@ def get_title(soup):
 
     return title_string
 
-def get_price(soup):
 
+def get_price(soup):
     try:
         price = soup.find("span", attrs={'id':'priceblock_ourprice'}).string.strip()
 
@@ -28,6 +29,7 @@ def get_price(soup):
             price = ""
 
     return price
+
 
 def get_rating(soup):
     try:
@@ -41,7 +43,8 @@ def get_rating(soup):
 
     return rating
 
-def get_review_count(soup):
+
+def get_review(soup):
     try:
         review_count = soup.find("span", attrs={'id':'acrCustomerReviewText'}).string.strip()
 
@@ -63,7 +66,7 @@ def get_availability(soup):
 
 def get_products():
     HEADERS = ({'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36', 'Accept-Language': 'en-US, en;q=0.5'})
-    html_text = requests.get("https://www.amazon.com/s?k=playstation+4&ref=nb_sb_noss_2", headers=HEADERS)
+    html_text = requests.get("https://www.amazon.com/s?k=playstation+4&ref=nb_sb_noss_2", headers = HEADERS)
     soup = BeautifulSoup(html_text.content, "lxml")
     links = soup.find_all("a", attrs={'class':'a-link-normal s-no-outline'})
 
@@ -75,13 +78,13 @@ def get_products():
     new_dict = {"title":[], "price":[], "rating":[], "reviews":[],"availability":[]}
     
     for link in links_list:
-        new_html_text = requests.get("https://www.amazon.com" + link, headers=HEADERS)
+        new_html_text = requests.get("https://www.amazon.com" + link, headers = HEADERS)
         new_soup = BeautifulSoup(new_html_text.content, "lxml")
 
         new_dict['title'].append(get_title(new_soup))
         new_dict['price'].append(get_price(new_soup))
         new_dict['rating'].append(get_rating(new_soup))
-        new_dict['reviews'].append(get_review_count(new_soup))
+        new_dict['reviews'].append(get_review(new_soup))
         new_dict['availability'].append(get_availability(new_soup))
 
     amazon = pd.DataFrame.from_dict(new_dict)
