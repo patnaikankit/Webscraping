@@ -21,8 +21,10 @@ class StockPrice:
     
 
 if __name__ == "__main__":
-    infosys_stock = StockPrice('infosys','nse')
+    # stock name
+    infosys_stock = StockPrice('','nse')
     latest_price_info = infosys_stock.get_latest_price()
-    historical_price_info = infosys_stock.get_historical_data('02-05-2023', '31-05-2023')
+    # start date and end date
+    historical_price_info = infosys_stock.get_historical_data('', '')
     print(latest_price_info)
     print(historical_price_info)

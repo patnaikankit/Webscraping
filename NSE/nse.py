@@ -25,12 +25,6 @@ class NSE:
     fetcher = requests.Session()
     fetcher.headers.update(headers)
 
-    '''
-     The line below is necessary as nseindia.com does no give access to its 
-     api unless you have cookies of visiting main page.
-     Hence visiting mainpage would imitate behaviour of a human user and let us
-     access all the nseindia APIs.
-    '''
     try:
         main_page = fetcher.get('https://www.nseindia.com')
     except requests.exceptions.ConnectionError:
@@ -59,7 +53,6 @@ class NSE:
                 'symbol_info': data['symbol_info']
             }
 
-    # please use this return format for other classes (like bse, nasdaq) too if they are created in future
     def get_latest_price(self):
         price_info = self.fetcher.get(self.latest_price_url).json()['priceInfo']
         return {
